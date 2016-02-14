@@ -1,0 +1,27 @@
+{
+  "name": "fs-as-json",
+  "version": "1.0.0",
+  "description": "Views the file-system as a JSON document",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukewh/fs-as-json.git"
+  },
+  "keywords": [
+    "json",
+    "file-system",
+    "fs"
+  ],
+  "author": "Luke Wesley-Holley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lukewh/fs-as-json/issues"
+  },
+  "homepage": "https://github.com/Lukewh/fs-as-json#readme",
+  "dependencies": {
+    "q": "^1.4.1"
+  }
+}
