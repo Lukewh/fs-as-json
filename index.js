@@ -14,14 +14,17 @@ function parse(dir) {
     if (fs.lstatSync(normalized).isDirectory()) {
       return {
         name: _path,
+        path: path.resolve(normalized),
         type: 'DIR',
         children: parse(normalized)
       };
     } else if (fs.lstatSync(normalized).isFile()) {
       return {
         name: _path,
+        path: path.resolve(normalized),
         type: 'FILE',
-        mime: mime.lookup(_path)
+        mime: mime.lookup(_path),
+        extension: path.extname(_path)
       };
     }
   });
