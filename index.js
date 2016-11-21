@@ -1,6 +1,6 @@
 var fs = require('fs');
-var q = require('q');
 var path = require('path');
+var mime = require('mime');
 
 function parse(dir) {
 
@@ -14,11 +14,14 @@ function parse(dir) {
     if (fs.lstatSync(normalized).isDirectory()) {
       return {
         name: _path,
+        type: 'DIR',
         children: parse(normalized)
       };
     } else if (fs.lstatSync(normalized).isFile()) {
       return {
-        name: _path
+        name: _path,
+        type: 'FILE',
+        mime: mime.lookup(_path)
       };
     }
   });

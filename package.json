@@ -1,6 +1,6 @@
 {
   "name": "fs-as-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Views the file-system as a JSON document",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/Lukewh/fs-as-json#readme",
   "dependencies": {
-    "q": "^1.4.1"
+    "mime": "^1.3.4"
   }
 }
